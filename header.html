@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #e9a5a5;
+        }
+        
+        .logo h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-right: 10px;
+            transition: background-color 0.3s; /* Add transition for smooth hover effect */
+        }
+        
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block; /* Ensure the entire area is clickable */
+            padding: 10px;
+            position: relative; /* Position relative for the pseudo-element */
+        }
+        
+        /* Add hover effect for navigation links */
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+        
+        /* Add underline on hover */
+        nav ul li a:hover::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+        }
+        
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+        }
+        
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items:center;
+            }
+        
+            .logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        
+            nav {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                order: 2; /* Change the order to appear after the header */
+                text-decoration: none;
+            }
+        
+            nav.active {
+                display: flex;
+            }
+        
+            .menu-toggle {
+                display: block;
+                color: #fff;
+                font-size: 20px;
+                margin-right: 10px;
+            }
+        
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        
+            /* Add margin to header to push the content below */
+            header {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="dribble.html">
+                <h1>Dribble</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inspiration.html">Inspiration</a></li>
+                <li><a href="findwork.html">Find Work</a></li>
+                <li><a href="learndesign.html">Learn Design</a></li>
+                <li><a href="gopro.html">Go Pro</a></li>
+                <li><a href="hiredesigners.html">Hire Designers</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <div class="profile">
+                <a href="profile.html" class="profile-link">
+                    <img src="/pic/profilepic.jpg" alt="Profile Picture">
+                </a>
+                <a href="upload.html" class="upload-link">
+                    <button type="button" class="upload-btn">Upload</button>
+                </a>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
+        
+            menuToggle.addEventListener('click', function () {
+                nav.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

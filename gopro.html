@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Pro</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Your existing CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .logo a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero {
+            background-color: #f2f2f2;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .features {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .features ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .features ul li {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .pricing-plans {
+            background-color: #f2f2f2;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .pricing-plans h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .pricing-plan {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .pricing-plan h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .pricing-plan p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .testimonials {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .testimonial {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .testimonial p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .faq {
+            background-color: #f2f2f2;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .faq h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .faq-item h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .faq-item p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            .hero {
+                padding: 30px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+
+            .hero p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .cta-button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+
+            .features {
+                padding: 30px;
+            }
+
+            .features h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .features ul li {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .pricing-plans {
+                padding: 30px;
+            }
+
+            .pricing-plans h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .pricing-plan h3 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            .pricing-plan p {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+
+            .testimonials {
+                padding: 30px;
+            }
+
+            .testimonials h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .testimonial {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .testimonial p {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+
+            .faq {
+                padding: 30px;
+            }
+
+            .faq h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .faq-item {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .faq-item h3 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            .faq-item p {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+
+            footer {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container">Header content</div>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Upgrade to Go Pro</h1>
+            <p>Unlock exclusive features and take your experience to the next level.</p>
+            <a href="#" class="cta-button">Upgrade Now</a>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Unlock advanced design tools</li>
+                <li>Access premium design templates</li>
+                <li>Priority customer support</li>
+                <li>Ad-free experience</li>
+                <!-- Add more features as needed -->
+            </ul>
+        </div>
+
+        <!-- Pricing Plans Section -->
+        <div class="pricing-plans">
+            <h2>Pricing Plans</h2>
+            <div class="pricing-plan">
+                <h3>Monthly Plan</h3>
+                <p>Unlock all pro features for $19.99 per month.</p>
+            </div>
+            <div class="pricing-plan">
+                <h3>Yearly Plan</h3>
+                <p>Get a 20% discount by choosing our yearly plan for $199.99 per year.</p>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials">
+            <h2>What Our Pro Users Say</h2>
+            <div class="testimonial">
+                <p>"Upgrading to Go Pro was the best decision I made for my design projects. The premium features are worth every penny!"</p>
+                <p>- John Doe, Pro User</p>
+            </div>
+            <div class="testimonial">
+                <p>"The ad-free experience and priority support have made my design workflow much smoother. Highly recommended!"</p>
+                <p>- Jane Smith, Pro User</p>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq">
+            <h2>FAQs</h2>
+            <div class="faq-item">
+                <h3>How do I upgrade to Go Pro?</h3>
+                <p>Simply click on the "Upgrade Now" button and follow the instructions to complete the payment process.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I cancel my subscription?</h3>
+                <p>Yes, you can cancel your subscription at any time. Your subscription will remain active until the end of the billing cycle.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there a money-back guarantee?</h3>
+                <p>Yes, we offer a 30-day money-back guarantee. If you're not satisfied with Go Pro, you can request a full refund within 30 days of your purchase.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-container">Footer content</footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

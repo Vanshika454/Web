@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <style>
+    /* Footer Styles */
+footer {
+    background-color: #e9a5a5;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.column {
+   
+    margin-bottom: 20px;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.column strong {
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+/* Horizontal line */
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Copyright text */
+.copyright {
+    margin-bottom: 10px;
+}
+
+/* Shots dribbled text */
+.shots-dribbled {
+    margin-top: 10px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .footer-columns {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .column {
+        width: auto;
+        flex: 0 0 auto;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .column:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Add these styles at the end of your existing CSS */
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    header, footer {
+        padding: 10px 0; /* Reduce padding for smaller screens */
+    }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 400px) {
+    header, footer {
+        font-size: 14px; /* Reduce font size for extra small screens */
+    }
+}
+
+
+   </style>
+</head>
+
+<body>
+    <footer>
+        <div class="footer-columns">
+            <div class="column">
+                <a href="dribble.html" class="logo">
+                    <h1>Dribble</h1>
+                </a>
+                <br>
+                <p>Dribble is the world's leading community for creatives to share, grow and get hired.</p>
+                <br>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="column">
+                
+                <ul>
+                    <li><a href="#"><strong>Designers</strong></a></li>
+                    <li><a href="#">Go Pro</a></li>
+                    <li><a href="#">Explore Design Work</a></li>
+                    <li><a href="#">Design Blog</a></li>
+                    <li><a href="#">Overtime Podcast</a></li>
+                    <li><a href="#">Playoffs</a></li>
+                    <li><a href="#">Weekly Warm-up</a></li>
+                    <li><a href="#">Refer a Friend</a></li>
+                    <li><a href="#">Code of Conduct</a></li>
+                </ul>
+            </div>
+            <div class="column">
+               
+                <ul>
+                    <li><a href="#"><strong>Hire Designers</strong></a></li>
+                    <li><a href="#">Post a Job Opening</a></li>
+                    <li><a href="#">Post a Freelance Project</a></li>
+                    <li><a href="#">Search for Designers</a></li>
+                    <li><strong><a href="#">Brands</a></strong></li>
+                    <li><a href="#">Advertise with Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                
+                <ul>
+                    <li><a href="#"><strong>Company</strong></a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Media Kit</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                
+                <ul>
+                    <li><a href="#"><strong>Directories</strong></a></li>
+                    <li><a href="#">Design Jobs</a></li>
+                    <li><a href="#">Designers for Hire</a></li>
+                    <li><a href="#">Freelance Designers for Hire</a></li>
+                    <li><a href="#">Tags</a></li>
+                    <li><a href="#">Places</a></li>
+                    <li><strong><a href="#">Design Assets</a></strong></li>
+                    <li><a href="#">Dribble Marketplace</a></li>
+                    <li><a href="#">Creative Market</a></li>
+                    <li><a href="#">Fontspring</a></li>
+                    <li><a href="#">Font Squirrel</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                
+                <ul>
+                    <li><a href="#"><strong>Design Resources</strong></a></li>
+                    <li><a href="#">Freelancing</a></li>
+                    <li><a href="#">Design Hiring</a></li>
+                    <li><a href="#">Design Portfolio</a></li>
+                    <li><a href="#">Design Education</a></li>
+                    <li><a href="#">Creative Process</a></li>
+                    <li><a href="#">Design Industry Trends</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">2023 Dribble. All rights reserved.</div>
+        <div class="shots-dribbled">20501853 Shots Dribbled</div>
+    </footer>
+    
+    
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Work</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add any additional CSS or font imports here -->
+    <style>
+        /* Your existing CSS styles */
+      /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Search container */
+.search-container {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Search button */
+.search-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Results section */
+.results {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Results heading */
+.results h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Job list */
+.job-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Individual job items */
+.job-list li {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Job title */
+.job-list li h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Job description */
+.job-list li p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Apply button */
+.job-list li a {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .results {
+        padding: 20px;
+    }
+
+    .results h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .job-list li {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .job-list li h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .job-list li p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .job-list li a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div id="header-container">Header content</div>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <!-- Search Container -->
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Enter keywords...">
+            <button class="search-btn">Search</button>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results">
+            <h2>Search Results</h2>
+            <ul class="job-list">
+                <li>
+                    <h3>Frontend Developer</h3>
+                    <p>A tech company is looking for a skilled frontend developer with experience in HTML, CSS, and JavaScript. Full-time position.</p>
+                    <a href="#">Apply Now</a>
+                </li>
+                <li>
+                    <h3>Graphic Designer</h3>
+                    <p>An advertising agency seeks a creative graphic designer proficient in Adobe Creative Suite. Contract-based opportunity.</p>
+                    <a href="#">Apply Now</a>
+                </li>
+                <li>
+                    <h3>UX/UI Designer</h3>
+                    <p>A software company is hiring a UX/UI designer to improve user experience across web and mobile platforms. Remote position.</p>
+                    <a href="#">Apply Now</a>
+                </li>
+                <!-- Add more job listings as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <footer id="footer-container">Footer content</footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

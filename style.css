@@ -1,0 +1,444 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 5px;
+  background-color: #f0f0f0;
+  margin-bottom:20px; 
+}
+
+.logo h1 {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+
+  
+}
+
+nav ul li {
+  display: inline;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding:  10px;
+  margin-right:10px ;
+  
+}
+
+
+/* Additional styling for footer columns */
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures equal height for each row */
+}
+
+.column {
+  width: 16.666%; /* Six columns, each occupying 1/6 of the width */
+  display: flex;
+  flex-direction: column;
+}
+
+.column ul {
+  list-style-type: none;
+  padding: 0;
+  flex-grow: 1; /* Each list expands to fill the available space vertically */
+}
+
+.column ul li {
+  margin-bottom: 10px;
+}
+
+.column strong {
+  margin-bottom: 10px;
+}
+
+/* Additional styling for footer */
+footer {
+  background-color:  #e9a5a5;;
+  padding: 20px;
+  margin-top:20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons i {
+  font-size: 24px; /* Adjust the size as needed */
+  color: #361111; /* Adjust the color as needed */
+}
+
+
+/* Horizontal line */
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+/* Copyright text */
+.copyright {
+  text-align: left;
+}
+
+/* Shots dribbled text */
+.shots-dribbled {
+  text-align: right;
+}
+
+h1{
+font-size: 30px;
+font-weight: bold;
+margin: 0;
+padding: 0;
+font-family: cursive;
+color: #6b1b1b;
+}
+/* Reset CSS */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f8f8f8;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+header {
+background-color: #ef9595;
+color: #fff;
+padding: 0px ;
+}
+
+header h1 {
+margin: 0;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav ul li {
+display: inline;
+
+}
+
+nav ul li:last-child {
+margin-right: 0;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+main {
+padding: 20px 0;
+}
+
+section {
+background-color: #fff;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+footer {
+
+background-color: #ef9595;
+color: #fdfbfc;
+padding: 20px 0;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+}
+
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh; /* Ensure the body fills the viewport height */
+}
+
+#footer-container {
+margin-top: auto; /* Push the footer to the bottom */
+}
+
+.column li a {
+text-decoration: none;
+ color:#fffcfc
+}
+
+body, html {
+height: 100%;
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+.profile-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+background-color: #f0f0f0;
+
+}
+
+.profile-content {
+max-width: 600px;
+padding: 20px;
+text-align: center;
+}
+
+.profile-content h1 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.avatar-selection {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.avatar-option {
+flex: 1;
+}
+
+.avatar-option input[type="file"] {
+display: none;
+}
+
+.avatar-option label,
+.avatar-option p {
+cursor: pointer;
+}
+
+.location-input {
+margin-bottom: 20px;
+position: relative;
+}
+
+.location-input input[type="text"] {
+width: 100%;
+padding: 10px;
+border: none;
+border-bottom: 1px solid #000;
+outline: none;
+}
+
+.underline {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 1px;
+background-color: #000;
+}
+
+.button-row {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.next-button {
+background-color: #007bff;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+margin-right: 10px;
+}
+
+.next-button:hover {
+background-color: #0056b3;
+}
+
+.logo  a{
+text-decoration: none; /* Removes underline from the text */
+}
+
+
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 20px;
+background-color: #f0f0f0;
+}
+
+.logo {
+margin-right: 20px; /* Adjust margin for spacing */
+}
+
+.logo h1 {
+margin: 0;
+font-size: 24px;
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+
+nav ul li {
+display: inline;
+margin-right: 10px; /* Adjust margin for spacing */
+}
+
+nav ul li:last-child {
+margin-right: 0; /* Remove margin for the last item */
+}
+
+nav ul li a {
+text-decoration: none;
+color: #333;
+}
+
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+background-color: #e9a5a5;
+}
+
+.search-box {
+display: flex;
+align-items: center;
+}
+
+.search-box input[type="text"] {
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-right: 10px;
+}
+
+.cart {
+display: flex;
+align-items: center;
+}
+
+.profile {
+display: flex;
+align-items: center;
+}
+
+.add-to-cart-btn,
+.upload-btn {
+padding: 8px 15px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-right: 10px;
+}
+
+.profile img {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+margin-right: 5px;
+}
+
+
+.logo {
+font-size: 24px;
+font-weight: bold;
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+
+nav ul li {
+display: inline;
+margin-right: 10px;
+}
+
+nav ul li:last-child {
+margin-right: 0;
+}
+
+nav ul li a {
+text-decoration: none;
+color: #333;
+}
+
+.search-box {
+display: flex;
+align-items: center;
+}
+
+.search-box input[type="text"] {
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-right: 10px;
+}
+
+.cart,
+.profile {
+display: flex;
+align-items: center;
+margin-right: 10px;
+}
+
+.add-to-cart-btn,
+.upload-btn {
+padding: 8px 15px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-right: 10px;
+}
+
+.profile img {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+margin-right: 5px;
+}
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+}
+
+/* Style for container */
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
